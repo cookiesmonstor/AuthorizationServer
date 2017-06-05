@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+    var authentication = Context.GetOwinContext().Authentication;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <h1>Authorization Server</h1>
+    <form>
+        <h2>Forms Login</h2>
+        <ul>
+            <li>
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username"/>
+            </li>
+            <li>
+                <label for="password">Password:</label>
+                <input type="password" id="password"name="password" />
+            </li>
+            <li>
+                <input type="checkbox" id="isPersistent" name="isPersistent" />
+                <label for="isPersistent">Remember Me</label>
+                <input type="submit" name="submit.signin" value="Sign In" />
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
